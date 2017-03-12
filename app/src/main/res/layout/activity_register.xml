@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context="click.kobaken.smartranking.RegisterActivity">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/user_name_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="8dp"
+            android:textColorHint="@color/colorAccent"
+            app:errorTextAppearance="@style/EditTextErrorAppearance"
+            app:hintTextAppearance="@style/EditTextHint">
+
+            <EditText
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="email"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:theme="@style/EditTextColorControl" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="登録" />
+
+    </RelativeLayout>
+</layout>

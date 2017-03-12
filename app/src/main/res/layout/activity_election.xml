@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="click.kobaken.smartranking.ElectionActivity">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:elevation="4dp"
+            app:elevation="4dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="みもりん選挙"
+            app:titleTextColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/my_point"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/toolbar"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="100IRH"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+        <ListView
+            android:id="@+id/idol_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_point" />
+
+        <!--<android.support.v7.widget.CardView-->
+        <!--android:id="@+id/cv"-->
+        <!--style="@style/MyCardView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/my_point"-->
+        <!--app:cardBackgroundColor="#97d4d9">-->
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="16dp">-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/badge_image"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginEnd="16dp"-->
+        <!--android:scaleType="fitXY"-->
+        <!--app:srcCompat="@drawable/mmrn" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/num_vote"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_below="@+id/badge_image"-->
+        <!--android:gravity="end"-->
+        <!--android:text="120票" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/textViewBadgeName"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_toEndOf="@+id/badge_image"-->
+        <!--android:text="三森すずこ"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textSize="24sp"-->
+        <!--android:textStyle="normal|bold" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/badge_description"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_toEndOf="@+id/badge_image"-->
+        <!--android:text="声優界のレインメーカー！\nみもりんっ！大好きっ！"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:textSize="18sp" />-->
+        <!--</RelativeLayout>-->
+        <!--</android.support.v7.widget.CardView>-->
+    </RelativeLayout>
+</layout>

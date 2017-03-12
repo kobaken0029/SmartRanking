@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="idol"
+            type="click.kobaken.smartranking.entity.Idol" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="click.kobaken.smartranking.IdolActivity">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/icon"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/mmrn" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon"
+                android:layout_marginBottom="16dp"
+                android:text="@{idol.name}"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                tools:text="三森すずこ" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/birthday_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="誕生日" />
+
+            <TextView
+                android:id="@+id/birthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6/28" />
+
+            <TextView
+                android:id="@+id/from_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="出身" />
+
+            <TextView
+                android:id="@+id/from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="東京都" />
+
+            <TextView
+                android:id="@+id/height_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="身長" />
+
+            <TextView
+                android:id="@+id/height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="160cm" />
+
+            <TextView
+                android:id="@+id/work_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="職業" />
+
+            <TextView
+                android:id="@+id/work"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="声優"
+                tools:text="声優" />
+
+            <TextView
+                android:id="@+id/hobby_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="趣味" />
+
+            <TextView
+                android:id="@+id/hobby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="舞台鑑賞、ショッピング、旅行" />
+
+            <TextView
+                android:id="@+id/description_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="紹介" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{idol.description}"
+                tools:text="三森すずこさ〜ん！" />
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:onClick="vote"
+            android:src="@drawable/ic_elections_white"
+            app:fabSize="normal" />
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_podium"
+        android:icon="@drawable/ic_podium"
+        android:title="選挙" />
+
+    <item
+        android:id="@+id/navigation_my_page"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="@string/title_my_page" />
+
+    <item
+        android:id="@+id/navigation_points"
+        android:icon="@drawable/ic_control_point_duplicate_black_24dp"
+        android:title="ポイント発行" />
+
+</menu>
